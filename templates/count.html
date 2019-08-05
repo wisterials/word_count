@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>统计结果:字数为 {{ count }}</h1>
+<h2>你的文本: </h2>
+{{ text }}
+<br>
+{% for word, num in sort %}
+{{ word }} - {{ num }}
+    <br>
+{% endfor %}
+</body>
+</html>
